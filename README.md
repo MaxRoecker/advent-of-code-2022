@@ -33,7 +33,7 @@ code for each day challenge is available with the correct solution.
 | 01  |   ✔    |   ✔    |       |
 | 02  |   ✔    |   ✔    |       |
 | 03  |   ✔    |   ✔    |       |
-| 04  |   ✖    |   ✖    |       |
+| 04  |   ✔    |   ✔    |       |
 | 05  |   ✖    |   ✖    |       |
 | 06  |   ✖    |   ✖    |       |
 | 07  |   ✖    |   ✖    |       |
