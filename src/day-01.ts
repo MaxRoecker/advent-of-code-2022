@@ -1,39 +1,36 @@
 import {createReadStream} from 'node:fs';
 import {createInterface} from 'node:readline/promises';
+import {asyncGeneratorToArray} from './iterators';
 
-const solve = async (filepath: string): Promise<Array<number>> => {
+export async function solvePart1(filepath: string): Promise<string> {
+  const calories = await asyncGeneratorToArray(getCalories(filepath));
+  const max = Math.max(...calories);
+  return max.toString(10);
+}
+
+export async function solvePart2(filepath: string): Promise<string> {
+  const calories = await asyncGeneratorToArray(getCalories(filepath));
+  const inverse = calories.sort((a, b) => b - a);
+  const top3 = inverse.slice(0, 3);
+  const sum = top3.reduce((acc, value) => acc + value, 0);
+  return sum.toString(10);
+}
+
+async function* getCalories(
+  filepath: string
+): AsyncGenerator<number, void, unknown> {
   const reader = createInterface({
     input: createReadStream(filepath),
     crlfDelay: Number.POSITIVE_INFINITY,
   });
-
-  const counter: Array<number> = [0];
-  let index = 0;
-
+  let sum = 0;
   for await (const line of reader) {
     if (line === '') {
-      index = index + 1;
-      counter.push(0);
+      yield sum;
+      sum = 0;
     } else {
-      const sum = counter[index];
       const current = Number.parseInt(line, 10);
-      counter[index] = sum + current;
+      sum = current + sum;
     }
   }
-
-  return counter;
-};
-
-export const solvePart1 = async (filepath: string): Promise<string> => {
-  const counter = await solve(filepath);
-  const max = Math.max(...counter);
-  return max.toString(10);
-};
-
-export const solvePart2 = async (filepath: string): Promise<string> => {
-  const counter = await solve(filepath);
-  const inverse = counter.sort((a, b) => b - a);
-  const top3 = inverse.slice(0, 3);
-  const sum = top3.reduce((acc, value) => acc + value, 0);
-  return sum.toString(10);
-};
+}
