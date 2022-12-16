@@ -30,7 +30,7 @@ code for each day challenge is available with the correct solution.
 
 | Day | Part 1 | Part 2 | Notes |
 | :-: | :----: | :----: | :---- |
-| 01  |   ✔    |   ✖    |       |
+| 01  |   ✔    |   ✔    |       |
 | 02  |   ✔    |   ✖    |       |
 | 03  |   ✖    |   ✖    |       |
 | 04  |   ✖    |   ✖    |       |
