@@ -12,15 +12,46 @@ The easiest way to get started is to run:
 npm install
 ```
 
-## How it works
+Each day challenge is available at
+[Advent of Code 2022](https://adventofcode.com/2022). Copies of the inputs are
+available on `inputs` directory.
 
-Each day challenge is available at https://adventofcode.com/2022/day/#, where
-`#` is a number from `1` to `25`. The inputs are available on `inputs`
-directory. To test the code for all the available days, run:
+To test the code for all the available days,
+run:
 
 ```sh
 npm run test
 ```
+
+## Project status
+
+| Day | Finished | Notes |
+| --- | -------- | ----- |
+| 01  | ✔        |       |
+| 02  | ✖        |       |
+| 03  | ✖        |       |
+| 04  | ✖        |       |
+| 05  | ✖        |       |
+| 06  | ✖        |       |
+| 07  | ✖        |       |
+| 08  | ✖        |       |
+| 09  | ✖        |       |
+| 10  | ✖        |       |
+| 11  | ✖        |       |
+| 12  | ✖        |       |
+| 13  | ✖        |       |
+| 14  | ✖        |       |
+| 15  | ✖        |       |
+| 16  | ✖        |       |
+| 17  | ✖        |       |
+| 18  | ✖        |       |
+| 19  | ✖        |       |
+| 20  | ✖        |       |
+| 21  | ✖        |       |
+| 22  | ✖        |       |
+| 23  | ✖        |       |
+| 24  | ✖        |       |
+| 25  | ✖        |       |
 
 ## Contributing
 
