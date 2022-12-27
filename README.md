@@ -37,7 +37,7 @@ code for each day challenge is available with the correct solution.
 | 05  |   ✔    |   ✔    |       |
 | 06  |   ✔    |   ✔    |       |
 | 07  |   ✔    |   ✔    |       |
-| 08  |   ✖    |   ✖    |       |
+| 08  |   ✔    |   ✔    |       |
 | 09  |   ✖    |   ✖    |       |
 | 10  |   ✖    |   ✖    |       |
 | 11  |   ✖    |   ✖    |       |
